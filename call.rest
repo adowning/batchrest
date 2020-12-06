@@ -1,0 +1,17 @@
+POST http://localhost:3154/batchGetAsync HTTP/1.1
+content-type: application/json'
+
+    "requests": [
+    {
+      "host": "jsonplaceholder.typicode.com",
+      "port": 80,
+      "command": "/posts/1",
+      "requestId": "command1"
+    },
+    {
+      "host": "jsonplaceholder.typicode.com",
+      "port": 80,
+      "command": "/albums/1",
+      "requestId": "command2"
+    }
+  ]

@@ -1,0 +1,19 @@
+{
+  "name": "BatchRest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "batch-api-requests": "0.0.1",
+    "batch-request-js": "^2.0.2",
+    "express": "3.4.8",
+    "fetch": "^1.1.0",
+    "mocha": "*",
+    "node-fetch": "^2.6.1",
+    "q": "*",
+    "supertest": "*"
+  }
+}

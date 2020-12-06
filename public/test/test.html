@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <script>
+
+        $.ajax({
+            url: '/batchGetAsync',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                requests: [
+                    {
+                        host: 'jsonplaceholder.typicode.com',
+                        port: 80,
+                        command: '/posts/1',
+                        requestId: 'command1'
+                    },
+                    {
+                        host: 'jsonplaceholder.typicode.com',
+                        port: 80,
+                        command: '/albums/1',
+                        requestId: 'command2'
+                    }
+                ]
+            },
+            success: function(resp) {
+                document.write(resp.message);
+            }
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
